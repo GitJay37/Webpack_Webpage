@@ -1,0 +1,41 @@
+img{
+    max-width: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.main-text{
+    grid-area: title;
+}
+
+.main-img{
+    grid-area: image;
+}
+
+.container{
+    grid-column: span 12;
+}
+
+// Configuración responsive para moviles
+.grid-main-area{
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-areas: 
+    "title title title title title title title title title"
+    "image image image image image image image image image";
+}
+
+@media (min-width: 960px){
+    .container{
+        grid-column: 2 / 12;
+    }
+    .grid-main-area{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-areas: 
+        "title title title image image image image image image";
+    }
+}
