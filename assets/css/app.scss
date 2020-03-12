@@ -1,3 +1,9 @@
+@import './modules/variables';
+
+body{
+    background-color: $light-blue;
+}
+
 img{
     max-width: 100%;
 }
