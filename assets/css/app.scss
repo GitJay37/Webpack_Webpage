@@ -87,6 +87,37 @@ figure{
     }
 }
 
+.slider{
+    header{
+        background-color: $sea-blue;
+        color: $white;
+        padding: $big-padding;
+        transform: translateY(40px);
+        width: 90%;
+        box-sizing: border-box;
+        margin: 0px auto;
+        h2{
+            margin: 0px;
+        }
+        .separator{
+            text-align: right;
+            padding-right: 150px;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                content: '';
+                height: 3px;
+                width: 140px;
+                background-color: $white;
+                top: 0.7em;
+                right: 0px;
+            }
+
+        }
+    }
+}
+
 .mission{
     align-items: center;
     .container{
@@ -152,6 +183,15 @@ figure{
         grid-template-columns: repeat(9,1fr);
         grid-template-areas: 
         "title title title image image image image image image";
+    }
+
+    .slider{
+        align-items: center;
+        header{
+            transform: translateX(100px);
+            width: 100%;
+            min-height: 350px;
+        }
     }
     .social{
         a{
