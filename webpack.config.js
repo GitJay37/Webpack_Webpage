@@ -8,6 +8,7 @@ const htmlWpck = new HtmlWpckPlugin({
 
 module.exports = {
     entry: './assets/javascript/entry.js',
+    devtool: 'eval-source-map',
     output: {
         publicPath: '/',
         path: path.join( __dirname, ('..') ),

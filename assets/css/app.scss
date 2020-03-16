@@ -96,6 +96,8 @@ figure{
         width: 90%;
         box-sizing: border-box;
         margin: 0px auto;
+        z-index: 10;
+        position: relative;
         h2{
             margin: 0px;
         }
@@ -115,6 +117,21 @@ figure{
             }
 
         }
+    }
+}
+
+#slider-text-content{
+    @include transition;
+    &.hide{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+}
+
+#slider-image{
+    @include transition;
+    &.hide{
+        opacity: 0;
     }
 }
 
@@ -186,7 +203,11 @@ figure{
     }
 
     .slider{
-        align-items: center;
+        .image{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
         header{
             transform: translateX(100px);
             width: 100%;

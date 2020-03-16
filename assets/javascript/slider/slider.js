@@ -2,7 +2,7 @@ export default class Slider{
     constructor({elements, animationFunc, speed}){
         this.elements = elements;
         this.animationFunc = animationFunc;
-
+      
         this.index = 0;
         this.size = elements.length;
 
