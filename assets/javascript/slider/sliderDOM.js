@@ -1,29 +1,18 @@
 import Slider from './slider';
+import elements from './elements';
 
 let sliderText = document.querySelector("#slider-text");
 let sliderTitle = document.querySelector("#slider-title");
 let sliderSubtitle = document.querySelector("#slider-subtitle");
 let textContent = document.querySelector("#slider-text-content");
 let sliderImage= document.querySelector("#slider-image"); 
+
+let leftArrow = document.querySelector(".left-arrow");
+let rightArrow = document.querySelector(".right-arrow");
  
 
 let slider = new Slider({
-    elements: 
-    [
-        {
-            title: 'Lorem ipsum',
-            subtitle: 'Ipsum',
-            image: '../public/images/chicken.jpg',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. odales, placerat sapien et, accumsan lorem.',                     
-        },
-
-        {
-            title: 'Lorem ipsum 2',
-            subtitle: 'Ipsum 2',
-            image: '../public/images/chickenv1.jpg',
-            text: ' 2Lorem ipsum dolor sit amet, consetum magna sodales, placerat sapien et, accumsan lorem.',                     
-        }
-    ],
+    elements,
     animationFunc: function(element){
         
        textContent.classList.add("hide");
@@ -41,11 +30,16 @@ let slider = new Slider({
         }, 600);
         
     },
-    speed: 3000
+    speed: 5000
 });
 
 slider.play();
 
+leftArrow.addEventListener('click', slider.prev );
+rightArrow.addEventListener('click', slider.next );
 
  /*
+    Icons made by <a href="https://www.flaticon.com/authors/those-icons" 
+    title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/"
+    title="Flaticon"> www.flaticon.com</a>
  */

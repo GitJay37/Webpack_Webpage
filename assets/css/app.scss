@@ -88,6 +88,27 @@ figure{
 }
 
 .slider{
+    .image{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+    .controls{
+        text-align: right;
+        margin-bottom: 10px;
+        padding-right: 3.5em;
+        .left-arrow, .right-arrow{
+            height: 30px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.2;
+            }
+        }
+        .left-arrow{
+            transform: rotate(180deg);
+            margin-right: 1.5em;
+        }
+    }
     header{
         background-color: $sea-blue;
         color: $white;
@@ -169,6 +190,10 @@ figure{
         max-width: 150px;
         margin: 1em auto;
     }
+}
+
+.footer{
+    text-align: center;
 }
 
 // Configuración responsive para moviles
