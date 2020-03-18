@@ -1,10 +1,3 @@
-function scrollToElement(e){
-    window.scrollTo({
-        'behavior': 'smooth',
-        'top': e.offsetTop
-    });
-}
-
 document.querySelector(".menu")
 .addEventListener("click", function(){
     document.querySelector(".menu-screen").classList.add("active");
@@ -18,17 +11,9 @@ document.querySelector(".close")
 let links = document.querySelectorAll(".menu-screen a");
 
 links.forEach(link => { 
+    
     link.addEventListener('click', function(ev){
         document.querySelector(".menu-screen").classList.remove("active");
-        
-        let paths = this.href.split("/");
-        const selector = paths[paths, length -1 ];
-
-        ev.preventDefault();
-            
-        scrollToElement(document.querySelector(selector));
-
-        return false;
 
     });
 }) 
