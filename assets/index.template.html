@@ -6,7 +6,44 @@
     <title>Basic webpack web page</title>
 </head>
 <body>
-    <section>
+    <div class="menu">
+        <img src="/public/images/menu.svg" alt="menu">
+    </div>
+    
+    <div class="menu-screen">
+        <a href="#" class="close">
+            <img src="/public/images/close.svg" alt="close button">
+        </a>
+
+        <nav>
+            <a href="#home">
+                <span class="main">Home</span>
+                <span>About us</span>
+            </a>
+
+            <a href="#products">
+                <span class="main">Products</span>
+                <span>Our products</span>
+            </a>
+
+            <a href="#mission">
+                <span class="main">Mission</span>
+                <span>We're the best</span>
+            </a>
+
+            <a href="#map">
+                <span class="main">Location</span>
+                <span>Find us</span>
+            </a>
+
+            <a href="#social">
+                <span class="main">Contatc</span>
+                <span>Contatc us</span>
+            </a>
+        </nav>
+    </div>
+
+    <section id="home">
         <div class="grid">
             <div class="container">
                 <div class="grid-main-area">
@@ -38,7 +75,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="cover parallax">
             <p>
                 This is an amazing place!!
@@ -49,7 +86,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="products">
         <div class="grid-main-area slider">
             <div class="text">  
                 <div class="controls">
@@ -78,7 +115,7 @@
         </div>
     </section>
     
-    <section>
+    <section id="mission">
         <div class="grid full-height mission">
             <div class="container">
                 <h1>Our mission</h1>
@@ -105,13 +142,13 @@
         </div>
     </section>
 
-    <section>
+    <section id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.187503655644!2d-74.08816378618427!3d4.737461896559234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84fad5ae2569%3A0x41737088c70fdcfd!2sCentro%20Comercial%20Centro%20Suba!5e0!3m2!1ses-419!2sco!4v1584541440313!5m2!1ses-419!2sco" 
             width="100%" height="450" style="margin-top: 90px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
         </iframe>
     </section>
 
-    <section>
+    <section id="social">
         <div class="grid social">
             <div class="container">
                 <p class="title">Contact us</p>
@@ -122,9 +159,15 @@
             </div>
         </div>
     </section>
-
+    
+    <script 
+        type="text/javascript" src="node_modules/default-passive-events/dist/index.js"
+    >
+    </script>
+    
     <footer class="footer">
-        <small>&copy; Arrows icons made by Freepik from www.flaticon.com</small>
+        <small>&copy; Arrows icons made by Freepik from www.flaticon.com</small><br>
+        <small>&copy; Menu and close icons made Raj Dev from freeicons.io </small>
     </footer>
 </body>
 </html>
