@@ -12,7 +12,5 @@ export default class Preloader{
             image.src = imagePath;
             image.onload = resolve; 
         })
-
-        
     }
 }
