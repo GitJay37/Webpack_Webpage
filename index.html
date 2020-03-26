@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic webpack web page</title>
+<link href="./main.css" rel="stylesheet"></head>
+<body>
+    <div class="menu">
+        <img src="/public/images/menu.svg" alt="menu">
+    </div>
+    
+    <div class="menu-screen">
+        <a href="#" class="close">
+            <img src="/public/images/close.svg" alt="close button">
+        </a>
+
+        <nav>
+            <a href="#home">
+                <span class="main">Home</span>
+                <span>About us</span>
+            </a>
+
+            <a href="#products">
+                <span class="main">Products</span>
+                <span>Our products</span>
+            </a>
+
+            <a href="#mission">
+                <span class="main">Mission</span>
+                <span>We're the best</span>
+            </a>
+
+            <a href="#map">
+                <span class="main">Location</span>
+                <span>Find us</span>
+            </a>
+
+            <a href="#social">
+                <span class="main">Contatc</span>
+                <span>Contatc us</span>
+            </a>
+        </nav>
+    </div>
+
+    <section id="home">
+        <div class="grid">
+            <div class="container">
+                <div class="grid-main-area">
+                    <div class="text">
+                        <h1>Stories Space</h1>
+        
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fuga quibusdam facere deserunt expedita quae iure inventor.
+                        </p>
+            
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Fuga lorem ipsum dolor.
+                        </p>
+        
+                        <a href="#" class="btn">Ver más</a>
+                    </div>
+                    
+                    <div class="image">
+        
+                        <figure>
+                            <img src="./public/images/restaurant.jpg" alt="woman-eating-mexican-food-in-restaurant">
+                            <figcaption>Que bello lugar!</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="cover parallax">
+            <p>
+                This is an amazing place!!
+                <span>
+                    We're to serve and that you feeling a great experience.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="grid-main-area slider">
+            <div class="text">  
+                <div class="controls">
+                    <img src="/public/images/right.svg" alt="Flecha a la izquierda" class="left-arrow">
+                    <img src="/public/images/right.svg" alt="Flecha a la derecha" class="right-arrow">
+                </div>
+                <header>
+                    <div id="slider-text-content">
+
+                        <p id="slider-subtitle" class="separator"> Dishes </p>
+
+                        <h2 id="slider-title">Lorem Ipsum</h2>
+                        
+                        <p id="slider-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Magnam exercitationem laboriosam omnis, a accusantium tempore.
+                            Mcchiken popoío.
+                        </p>
+                    </div>
+                </header>
+            </div>
+
+            <div class="image">
+                <img id="slider-image" src="/public/images/chicken.jpg" alt="orange chiken dish">
+            </div>
+        </div>
+    </section>
+    
+    <section id="mission">
+        <div class="grid full-height mission">
+            <div class="container">
+                <h1>Our mission</h1>
+
+                <figure>
+                    <img src="/public/images/burger.jpg" alt="a tasty burger" height="400">
+                    <figcaption>Delicious burguers</figcaption>
+                </figure>
+
+                <p>
+                    Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. 
+                    Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, 
+                    cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+                    desconocido usó una galería de textos y los mezcló e las industrias desde el año 1500, 
+                    cuando un impresor (N. del T. persona que se dedica a la imprenta) 
+                </p>
+
+                <p>
+                    Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. 
+                    Tiene sus raices en una pieza classia, ponte laromj iopsun ipsum, contrario de ipsum radjkta.
+                    Ipsum no es simplemente texth jeikwoo lpinn ipsum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.187503655644!2d-74.08816378618427!3d4.737461896559234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84fad5ae2569%3A0x41737088c70fdcfd!2sCentro%20Comercial%20Centro%20Suba!5e0!3m2!1ses-419!2sco!4v1584541440313!5m2!1ses-419!2sco" 
+            width="100%" height="450" style="margin-top: 90px;" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+        </iframe>
+    </section>
+
+    <section id="social">
+        <div class="grid social">
+            <div class="container">
+                <p class="title">Contact us</p>
+                <a href="mailto:jeisondejesus7@gmail.com" class="btn"> Mail </a>
+                <a href="http://app.juniorfc.co/" class="btn"> Junior web</a>
+                <a href="https://www.google.com.co/" class="btn"> Google</a>
+                <a href="https://www.youtube.com/" class="btn"> Youtube</a>       
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <small>&copy; Arrows icons made by Freepik from www.flaticon.com</small><br>
+        <small>&copy; Menu and close icons made Raj Dev from freeicons.io </small>
+    </footer>
+<script type="text/javascript" src="./dist/javascript/bundle.js"></script></body>
+</html>
